@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slider">
+    <div class="slides">
+      <div class="slide active" style="background-image: url('images/img1.jpg');">
+        <div class="caption">Caption for image 1</div>
+      </div>
+      <div class="slide" style="background-image: url('images/img2.jpg');">
+        <div class="caption">Caption for image 2</div>
+      </div>
+      <div class="slide" style="background-image: url('images/img3.jpg');">
+        <div class="caption">Caption for image 3</div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <div class="navigation">
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
+    </div>
+    <div class="thumbnails">
+      <img src="images/img1.jpg" class="thumbnail active" data-index="0">
+      <img src="images/img2.jpg" class="thumbnail" data-index="1">
+      <img src="images/img3.jpg" class="thumbnail" data-index="2">
+      <!-- Add more thumbnails as needed -->
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
